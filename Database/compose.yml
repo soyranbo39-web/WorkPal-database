@@ -15,4 +15,7 @@ services:
 volumes:
   db_data:
 
+CREATE USER appuser WITH PASSWORD 'app123';
+GRANT ALL PRIVILEGES ON DATABASE "WorkPalDB" TO appuser;
+
 
